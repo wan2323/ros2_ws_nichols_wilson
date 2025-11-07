@@ -1,0 +1,47 @@
+[0.009s] Invoking command in '/home/wilson/ROBE313_ROS2Hw/build/robot_bringup': /usr/bin/cmake --build /home/wilson/ROBE313_ROS2Hw/build/robot_bringup -- -j20 -l20
+[0.026s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.121s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.144s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.145s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.148s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.153s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.159s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.177s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.178s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.250s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.279s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[0.288s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.289s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.358s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[0.358s] -- Found rviz2: 11.2.22 (/opt/ros/humble/share/rviz2/cmake)
+[0.359s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.389s] Error parsing '/home/wilson/ROBE313_ROS2Hw/src/robot_bringup/package.xml':
+[0.417s] Traceback (most recent call last):
+[0.417s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.417s]     main()
+[0.417s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.417s]     raise e
+[0.417s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.417s]     package = parse_package_string(
+[0.417s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.417s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.417s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/wilson/ROBE313_ROS2Hw/src/robot_bringup/package.xml':
+[0.418s] Error(s):
+[0.418s] - The generic dependency on 'robot_state_publisher' is redundant with: exec_depend
+[0.418s] - The generic dependency on 'rviz2' is redundant with: exec_depend
+[0.426s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.426s]   execute_process(/usr/bin/python3
+[0.426s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.426s]   /home/wilson/ROBE313_ROS2Hw/src/robot_bringup/package.xml
+[0.427s]   /home/wilson/ROBE313_ROS2Hw/build/robot_bringup/ament_cmake_core/package.cmake)
+[0.427s]   returned error code 1
+[0.427s] Call Stack (most recent call first):
+[0.427s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.427s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.427s]   CMakeLists.txt:30 (ament_lint_auto_find_test_dependencies)
+[0.427s] 
+[0.427s] [0m
+[0.427s] -- Configuring incomplete, errors occurred!
+[0.427s] See also "/home/wilson/ROBE313_ROS2Hw/build/robot_bringup/CMakeFiles/CMakeOutput.log".
+[0.432s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.434s] Invoked command in '/home/wilson/ROBE313_ROS2Hw/build/robot_bringup' returned '2': /usr/bin/cmake --build /home/wilson/ROBE313_ROS2Hw/build/robot_bringup -- -j20 -l20

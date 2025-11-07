@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'controller_node = robot_simulator_py.controller_node:main',
         ],
     },
 )

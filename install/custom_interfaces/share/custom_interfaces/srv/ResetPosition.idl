@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_interfaces/srv/ResetPosition.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseStamped.idl"
+
+module custom_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request (from client → server)")
+    struct ResetPosition_Request {
+      geometry_msgs::msg::PoseStamped target;
+    };
+    @verbatim (language="comment", text=
+      "Response (from server → client)")
+    struct ResetPosition_Response {
+      boolean success;
+    };
+  };
+};

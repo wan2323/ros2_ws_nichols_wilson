@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot name="mini_bot">
+
+  <!-- Base -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.4 0.3 0.1"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="gray"><color rgba="0.6 0.6 0.6 1.0"/></material>
+    </visual>
+  </link>
+
+  <!-- Camera -->
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <material name="blue"><color rgba="0.2 0.4 0.9 1.0"/></material>
+    </visual>
+  </link>
+
+  <!-- Static transform: base_link -> camera_link -->
+  <joint name="base_to_camera" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <!-- camera 20 cm forward (x), 30 cm up (z) -->
+    <origin xyz="0.20 0.0 0.30" rpy="0 0 0"/>
+  </joint>
+
+</robot>

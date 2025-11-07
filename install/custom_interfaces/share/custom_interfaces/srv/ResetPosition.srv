@@ -1,0 +1,5 @@
+# Request (from client → server)
+geometry_msgs/PoseStamped target
+---
+# Response (from server → client)
+bool success
