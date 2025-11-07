@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000340] (-) JobUnselected: {'identifier': 'custom_interfaces'}
-[0.000357] (-) JobUnselected: {'identifier': 'robot_bringup'}
-[0.000368] (-) JobUnselected: {'identifier': 'robot_simulator_cpp'}
-[0.000375] (-) JobUnselected: {'identifier': 'robot_simulator_py'}
-[0.000709] (-) EventReactorShutdown: {}
