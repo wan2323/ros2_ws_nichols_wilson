@@ -7,9 +7,8 @@ import os
 def generate_launch_description():
     bringup_share = get_package_share_directory('robot_bringup')
     urdf_path = os.path.join(bringup_share, 'urdf', 'robot.urdf')
-    rviz_cfg  = os.path.join(bringup_share, 'rviz', 'sim.rviz')
+    rviz_cfg  = os.path.join(bringup_share, 'rviz', 'simulation.rviz')
 
-    # Read URDF into robot_description param
     with open(urdf_path, 'r') as f:
         robot_description = f.read()
 
@@ -33,8 +32,6 @@ def generate_launch_description():
         executable='controller_node',
         name='controller_node',
         output='screen',
-        # Optional tuning:
-        # parameters=[{'side_length': 2.0, 'linear_speed': 0.3, 'angular_speed': 0.6}]
     )
 
     rviz = Node(
